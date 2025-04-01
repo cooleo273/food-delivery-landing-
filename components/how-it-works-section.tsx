@@ -22,7 +22,7 @@ const steps = [
     icon: <Navigation className="h-8 w-8 text-primary" />,
     title: "Track",
     description: "Follow your order in real-time from preparation to delivery.",
-    image: "https://images.unsplash.com/photo-1629905679177-5d2fada9e22e?q=80&w=1374",
+    image: "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     icon: <Check className="h-8 w-8 text-primary" />,

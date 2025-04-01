@@ -17,7 +17,7 @@ const features = [
     icon: <MapPin className="h-10 w-10 text-primary" />,
     title: "Live Tracking",
     description: "Track your order in real-time from the restaurant to your doorstep.",
-    image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?q=80&w=1333",
+    image: "https://images.unsplash.com/photo-1501139083538-0139583c060f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     icon: <CreditCard className="h-10 w-10 text-primary" />,

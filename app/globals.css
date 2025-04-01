@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+
+    --primary: 16 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 43 100% 50%;
+    --secondary-foreground: 0 0% 12%;
+
+    --accent: 122 39% 49%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 16 100% 60%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 10% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 10% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 10% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 16 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 43 100% 50%;
+    --secondary-foreground: 0 0% 12%;
+
+    --accent: 122 39% 49%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 220 10% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 10% 20%;
+    --input: 220 10% 20%;
+    --ring: 16 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Custom font classes */
+  .font-heading {
+    font-family: var(--font-poppins);
+  }
+
+  .font-sans {
+    font-family: var(--font-inter);
+  }
+
+  /* Add this to improve text readability */
+  p {
+    line-height: 1.6;
+  }
+
+  .text-lg,
+  .text-xl {
+    line-height: 1.5;
+  }
+}
+
+/* Additional styling */
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)));
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-effect {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-custom {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+.dark .shadow-custom {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
